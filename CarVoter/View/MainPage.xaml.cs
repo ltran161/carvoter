@@ -1,4 +1,5 @@
-﻿using Microsoft.Phone.Controls;
+﻿using System.Windows;
+using Microsoft.Phone.Controls;
 
 namespace CarVoter
 {
@@ -8,6 +9,13 @@ namespace CarVoter
         public MainPage()
         {
             InitializeComponent();
+
+            Loaded += MainPage_Loaded;
+        }
+
+        private void MainPage_Loaded(object sender, RoutedEventArgs e)
+        {
+            throw new System.NotImplementedException();
         }
     }
 }
